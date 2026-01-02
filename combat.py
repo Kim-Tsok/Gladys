@@ -1,4 +1,3 @@
-# combat.py
 import random
 from weapons import calculate_weapon
 from armour import calculate_armour

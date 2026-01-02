@@ -1,6 +1,6 @@
 import random
 from combat import fight
-from weapons import weapon
+from weapons import weapons
 from armour import armour
 from enemies import enemies
 
@@ -13,6 +13,7 @@ player = {
 }
 
 print(f"Welcome here, {player['gender']}!")
+weapon = weapons["excalibur"].copy()
 fight(player, weapon, armour, enemies["goblin"])
 input("You have defeated the goblin! Now you must face the ogre! ")
 fight(player, weapon, armour, enemies["ogre"])
