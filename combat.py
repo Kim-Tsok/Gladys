@@ -13,6 +13,7 @@ def fight(player, weapon, armour, enemy):
     max_player_health = player["health"]
     turn = 1
 
+    print(" ")
     print("\n" + "=" * 50)
     print(f"BATTLE BEGINS! {enemy_name}")
     print("=" * 50)
