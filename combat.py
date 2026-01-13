@@ -4,6 +4,9 @@ from armour import calculate_armour
 
 def fight(player, weapon, armour, enemy):
     enemy = enemy.copy()
+    from colorama import init, Fore, Style
+
+    init()
 
     enemy_name = enemy["name"]
     enemy_health = enemy["health"]
@@ -27,7 +30,7 @@ def fight(player, weapon, armour, enemy):
             print("You are stunned and miss your turn!")
             player["status"] = None
         else:
-            choice = input("(a)ttack, (d)efend, (r)un: ").lower().strip()
+            choice = input(f"{Fore.RED}(a){Style.RESET_ALL}ttack, {Fore.GREEN}(d){Style.RESET_ALL}efend, {Fore.BLUE}(r){Style.RESET_ALL}un: ").lower().strip()
 
             if choice in ("a", "attack"):
                 calculate_weapon(weapon)
