@@ -26,19 +26,19 @@ def main():
     instructions()
 
     # Prologue
-    input(f"{characters["unknown"]} What is your motivation for all of this, why do you do this? ")
+    input(f"{characters['unknown']} What is your motivation for all of this, why do you do this? ")
     input("Make it easier on yourself, just give up. ")
     input("Give up on this stupid dream of trying to beat me. ")
     input("")
-    input(f"{characters["person01"]} Hey wake up! wakeup you idiot. ")
-    input(f"{characters["player"]} What happened? ")
-    input(f"{characters["person01"]} You were shaking and mumbling something in your sleep. ")
-    input(f"{characters["player"]} I had a dream. ")
-    input(f"{characters["person01"]} You saw him again, didn't you? ")
-    input(f"{characters["player"]}: It was terrifying. ")
+    input(f"{characters['person01']} Hey wake up! wakeup you idiot. ")
+    input(f"{characters['player']} What happened? ")
+    input(f"{characters['person01']} You were shaking and mumbling something in your sleep. ")
+    input(f"{characters['player']} I had a dream. ")
+    input(f"{characters['person01']} You saw him again, didn't you? ")
+    input(f"{characters['player']}: It was terrifying. ")
 
     choice = input(
-        f"{characters["person01"]} Wanna spar cause we're weirdos? (y/n) "
+        f"{characters['person01']} Wanna spar cause we're weirdos? (y/n) "
     ).lower()
 
     weapon = weapons["excalibur"].copy()
